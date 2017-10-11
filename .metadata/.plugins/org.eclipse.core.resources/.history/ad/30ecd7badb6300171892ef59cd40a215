@@ -1,0 +1,10 @@
+package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
+
+public class AdvancedCalculator {
+	
+	public static final double PI = 3.14159265;
+	
+	public static double computeCircleArea(double r) {
+		double PI*Math.pow(r, 2);
+	}
+}

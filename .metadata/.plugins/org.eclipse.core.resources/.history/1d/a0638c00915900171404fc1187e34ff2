@@ -1,0 +1,21 @@
+package a_Zadania.a_Dzien_1.c_Metody;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		
+	Person person1 = new Person();
+		
+			person1.setName("imię");
+			person1.setSurname("nazwisko");
+			person1.setAge(123);
+			person1.setGender("Płeć");
+			System.out.println(person1.getAge());
+			person1.increaseAge();
+			System.out.println(person1.getAge());
+			
+	Car car = new Car();
+			
+		car.getter();
+	}
+}

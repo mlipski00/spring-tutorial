@@ -1,0 +1,38 @@
+package Zadanie1;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		Random generator = new Random();
+		int x = generator.nextInt(100);
+		System.out.println(x);
+		Scanner scan = new Scanner(System.in);
+		System.out.println("zgadnij liczbę");
+		boolean guess = false;
+		int licznik = 0;
+		while (!guess) {
+			int  shot = scan.nextInt();
+			else (licznik = 2) {
+				System.out.println("koniec prób");
+				guess = true;
+			}
+			else if (shot == x) {
+				System.out.println("trafione!");
+				guess = true;
+			}
+			else if (shot < x) {
+				System.out.println("za mało, spróbuj ponownie");
+				licznik++;
+			}
+			else if (shot > x) {
+			System.out.println("za dużo, spróbuj ponownie");
+			licznik++;
+			}
+		}
+		scan.close();
+	}
+
+}

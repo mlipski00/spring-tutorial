@@ -1,0 +1,19 @@
+package springtutorial;
+
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class mainSpring {
+
+	public static void main(String[] args) {
+	
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+		context.registerShutdownHook();
+		SomeBean somebean = context.getBean("someBean", SomeBean.class);
+		somebean.isWorking();
+		context.close();
+
+	}
+
+}

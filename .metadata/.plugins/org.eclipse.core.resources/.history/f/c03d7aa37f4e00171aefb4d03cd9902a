@@ -1,0 +1,18 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Scanner;
+
+public class Main4 {
+
+    public static void main(String[] args) {
+
+    	rowsColumns();
+    	
+    }
+    static void rowsColumns()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	System.out.println("Podaj liczbę kolumn: ");
+    	System.out.println("Podaj liczbę wierszy: ");
+    }
+}

@@ -1,0 +1,28 @@
+package exam;
+
+import java.util.StringTokenizer;
+
+public class Main6 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(replaceStr("Napis do zmiany", "do", "bez"));
+	}
+	
+	static String replaceStr(String str, String forReplace, String replacement) {
+		
+	String nextToken = null;
+	StringTokenizer tokenizer = new StringTokenizer(str);
+	
+  	  String NewStr = null;
+  	  while (tokenizer.hasMoreTokens()) {
+  		if (nextToken == forReplace)
+  		{
+  			nextToken = replacement;
+  		}
+  		NewStr += nextToken;
+  	  	}
+		return NewStr;
+	}
+}
+

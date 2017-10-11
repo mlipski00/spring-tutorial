@@ -1,0 +1,21 @@
+package exam;
+
+public class Main6 {
+	
+	public static void main(String[] args) {
+		
+		replaceStr("Napis do zmiany", "do", "bez");
+	}
+	
+	static String replaceStr(String str, String forReplace, String replacement) {
+		
+  	    String[] parted = str.split(" ");
+  	  for (int i = parted.length; i >= 0 ; i--)
+  		if (parted[i] == forReplace)
+  		{
+  			parted[i] = replacement;
+  		}
+  	  
+		return replacement;
+	}
+}

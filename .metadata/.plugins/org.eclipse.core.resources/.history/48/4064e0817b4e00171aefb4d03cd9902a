@@ -1,0 +1,25 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Scanner;
+
+public class Main3 {
+
+    public static void main(String[] args) {
+    	
+    	getData();
+    	
+    }
+    static void getData()
+    {
+    	int sum = 0;
+    	int number = 1;
+    	Scanner scan = new Scanner(System.in);
+    	while (number !=0) {
+    		System.out.println("wprowadź liczbę");
+    		number = scan.nextInt();
+    		sum += number;
+    	}
+    	System.out.println("suma liczb: " + sum);
+    	
+    }
+}

@@ -1,0 +1,20 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Main5 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(ball());
+	}
+	
+	static double ball() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("podaj liczbę: ");
+		double r = scan.nextDouble();
+		return 4*3.14*r*r;
+		
+	}
+
+}

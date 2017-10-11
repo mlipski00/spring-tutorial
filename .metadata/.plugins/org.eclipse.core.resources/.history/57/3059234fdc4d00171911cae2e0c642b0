@@ -1,0 +1,30 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main4 {
+
+    public static void main(String[] args) {
+
+    	System.out.println(toInt("123"));
+    	System.out.println(toInt(null));
+    	System.out.println(toInt("b"));
+    }
+    static int toInt(String str)
+    {
+    	int i = 0;
+    	try {
+    		if (str == null) {
+    			throw new NullPointerException("null pointer1");
+    		}
+    	i = Integer.parseInt(str);
+    	}
+        catch (NullPointerException ex) {
+        System.out.println("null pointer");
+        }
+    	catch (NumberFormatException ex) {
+    	System.out.println("zły format");
+    	}
+    	return i;
+    }
+
+}

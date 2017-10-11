@@ -1,0 +1,17 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+import java.util.Scanner;
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        
+    	Scanner x = new Scanner(System.in);
+    	
+    	int num = x.nextInt();
+    	 
+    	static int square(int y) {
+    	return y*y; }
+    	
+    	System.out.print(square(num));
+    }
+}

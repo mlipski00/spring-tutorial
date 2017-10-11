@@ -1,0 +1,21 @@
+package exam;
+
+public class Main1 {
+
+	public static void main(String args){
+	rectangle(2, 4);
+	rectangle(2, 0);
+	}
+
+
+
+	static int rectangle(int a, int b) {
+	try {
+		return a*b;
+		}	
+		catch (ArithmeticException ex) {
+			System.out.println("Arithmetic Exception: You can't divide by 0");
+		}
+	return -1;
+	}
+}

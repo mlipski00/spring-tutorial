@@ -1,0 +1,39 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main4 {
+
+    public static void main(String[] args) {
+
+    	rowsColumns();
+    	
+    }
+    static void rowsColumns()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	System.out.println("Podaj liczbę kolumn: ");
+    	int columns = scan.nextInt();
+    	
+    	System.out.println("Podaj liczbę wierszy: ");
+    	int lines = scan.nextInt();
+
+    	int[][] arr = new int[columns][lines];
+		int number = 0;
+		int sum = 0;
+    	for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j] = number;
+				sum +=number;
+				number++;
+			}
+		}
+    	float average = sum / (number);
+		for (int[] is : arr) {
+			System.out.println(Arrays.toString(is));
+		}
+		System.out.println("suma to: " + sum);
+		System.out.println("średnia to: " + average + " z elemntów " + (number));
+    }
+}

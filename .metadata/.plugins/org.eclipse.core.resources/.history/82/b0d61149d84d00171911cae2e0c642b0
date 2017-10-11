@@ -1,0 +1,21 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main3 {
+
+    public static void main(String[] args) {
+
+    getLength("Dupa");
+    }
+    static int getLength(String str) {
+    int leng = 0;
+    try {
+    leng = str.length();
+    }
+    catch (NullPointerException ex) {
+	System.out.println("Exception");
+    }
+    
+    return leng;
+    }
+}

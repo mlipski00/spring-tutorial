@@ -1,0 +1,19 @@
+package springtutorial.implementations;
+
+import springtutorial.api.Logger;
+import springtutorial.api.UsersRepository;
+import springtutorial.domain.User;
+
+public class UserRepositoryImpl implements UsersRepository {
+
+	public User createUser(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setLogger(Logger logger) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,49 @@
+package a_Zadania.a_Dzien_1.a_Tworzenie_baz_i_tabel;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Main2 {
+//Zapisz w poniższej zmiennej kod zapytania SQL tworzącego pierwszą tabelę
+	public static String queryCreateTable1 = 
+			"CREATE TABLE Products(" +
+			"id INT(11) AUTOINCREMENT" +	
+			"name VARCHAR(255) NULL" +
+			"description VARCHAR(255) NULL" +
+			"price DECIMAL(10,2)" +
+			"PRIMARY KEY (id))";
+
+//Zapisz w poniższej zmiennej kod zapytania SQL tworzącego drugą tabelę
+	public static String queryCreateTable2 = "CREATE TABLE Orders"+
+					"(" +
+					"id INT(11) AUTOINCREMENT" +
+					"description VARCHAR(255) NULL" +
+					")";
+
+//Zapisz w poniższej zmiennej kod zapytania SQL tworzącego trzecią tabelę
+	public static String queryCreateTable3 = "CREATE TABLE Clients" +
+					"(" +
+					"id INT(11) AUTOINCREMENT" +
+					"name VARCHAR(255) NULL" +
+					"surname VARCHAR(255) NULL" +
+					")";
+					
+	
+	public static void main(String[] args) {
+		
+		Connection conn;
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/products_ex?useSLL=false","root","coderslab");
+			Statement stat = conn.createStatement();
+			stat.executeUpdate(queryCreateTable1);
+			stat.executeUpdate(queryCreateTable2);
+			stat.executeUpdate(queryCreateTable3);
+			conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

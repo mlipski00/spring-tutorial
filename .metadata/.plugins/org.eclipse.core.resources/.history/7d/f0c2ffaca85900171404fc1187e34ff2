@@ -1,0 +1,31 @@
+package a_Zadania.a_Dzien_1.d_Konstruktor;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		
+		Burger burger1 = new Burger("duzy", 123);
+		Burger burger2 = new Burger();
+		
+		System.out.println(burger1);
+		
+		Calculator calculator = new Calculator();
+		
+		System.out.println(calculator.add(123, 123));
+		System.out.println(calculator.multiply(123, 123));
+		System.out.println(calculator.divide(123, 123));
+		System.out.println(calculator.substrack(123, 123));
+		
+		calculator.printOperations();
+		//calculator.clearOperations();
+		
+		Calculator calculator02 = new Calculator();
+		
+		System.out.println(calculator02.add(123, 123));
+		System.out.println(calculator02.multiply(123, 123));
+		System.out.println(calculator02.divide(123, 123));
+		System.out.println(calculator02.substrack(123, 123));
+		
+		calculator.printOperations();
+	}
+}

@@ -1,0 +1,18 @@
+package springtutorial;
+
+import org.springframework.beans.factory.BeanNameAware;
+
+public class SomeBean implements BeanNameAware {
+
+	private String name;
+
+	public void setBeanName(String name) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	private void init() {
+		System.out.println("Nazywam się " + name);
+	}
+}

@@ -1,0 +1,20 @@
+package a_Zadania.a_Dzien_1.b_Atrybuty;
+
+
+public class Main2 {
+	
+	public static void main(String[] args) {
+		
+		
+		Attribute attr = new Attribute();
+		
+		System.out.println(attr.publicAttribute = "jeden");
+		System.out.println(attr.protectedAttribute = 23);
+		attr.setPrivateAttr("nowa nazwa");
+		System.out.println(attr.getPrivateAttr());
+		
+		Person person = new Person();
+		person.setAttr("Tomasz", "Nowak", 21, "facet");
+		System.out.println(person.toString());
+	}
+}

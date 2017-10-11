@@ -1,0 +1,32 @@
+package a_Zadania.d_Dzien_4.b_Pliki;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Main1 {
+
+    public static void main(String[] args) {
+
+
+    	try {
+    		PrintWriter file = new PrintWriter("Main1.txt");
+			Scanner scan = new Scanner(System.in);
+			boolean finished = false;
+			while (!finished) {
+				String txt = scan.nextLine();
+				if (txt.equals("Quit")) {
+					finished = true;
+					file.close();
+					scan.close();
+				}
+				else {
+					file.println(txt);
+				}
+			}
+    	}
+    	catch (FileNotFoundException e) {
+		System.out.println("Plik nie istnieje");
+		}
+    }
+}

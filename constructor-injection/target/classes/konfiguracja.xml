@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mojLogger" class="springtutorial.implementations.LoggerImpl">
+		<property name="name" value="MójLogger"></property>
+		<property name="version" value="3"></property>
+	</bean>
+
+	<bean id="repozytoriumUzytkownikow" 
+	class="springtutorial.implementations.UsersRepositoryImpl">
+
+		<constructor-arg ref="mojLogger"></constructor-arg>
+		<constructor-arg value="http://127.0.0.1:12365/db"></constructor-arg>
+	</bean>
+</beans>

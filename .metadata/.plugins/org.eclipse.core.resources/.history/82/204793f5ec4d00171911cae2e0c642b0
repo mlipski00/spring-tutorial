@@ -1,0 +1,22 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+
+public class Main1 {
+
+    public static void main(String[] args) {
+
+    	System.out.println(encode("abcdefghikjlmnopqrstuwxyz"));
+    }
+
+    
+	static String encode(String str) {
+		StringBuilder  result = new StringBuilder();
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if ((int)c==32) result.append(" ");
+			else if (((int)c>(90) && (int)c<(96)) || (int)c>(122-3)) result.append((char) ((int)c-23));
+			else  result.append((char) ((int)c+3));	
+			}
+		return result.toString();
+	}
+}

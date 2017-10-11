@@ -1,0 +1,19 @@
+package exam;
+
+public class Main2 {
+	
+	public static void main(String[] args){
+		
+		System.out.println(shorten("Długi napis", 2));
+		
+	}
+	
+static String shorten(String str, int length) {
+		
+	String newStr = str.substring(0, length);
+	return newStr;
+	}
+	
+}
+
+

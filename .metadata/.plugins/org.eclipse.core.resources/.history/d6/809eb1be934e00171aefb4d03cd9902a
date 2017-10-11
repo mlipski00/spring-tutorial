@@ -1,0 +1,40 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Scanner;
+
+public class Main6 {
+
+    public static void main(String[] args) {
+
+    	equation();
+    }
+    static void equation()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	//boolean finished = false;
+    	//while (!finished) {
+    		System.out.println("wprowadź a: ");
+    		double a = scan.nextDouble();
+    		System.out.println("wprowadź b: ");
+    		double b = scan.nextDouble();
+    	    System.out.println("wprowadź c: ");
+    	    double c = scan.nextDouble();
+    	    scan.close();
+    	    math(a, b, c);
+    	//}
+    }
+	private static void math(double a, double b, double c) {
+		double delta = b*2* -(4*a*c);
+		if (delta > 0 ) {
+		double x1 = (((b*-1) - Math.sqrt(delta))) / 2*a;
+		System.out.println(x1);
+		}
+		else if (delta == 0) {
+		double x2 = (((b*-1) + Math.sqrt(delta))) / 2*a;
+		System.out.println(x2);
+		}
+		else {
+		System.out.println("brak miejsc zerowych");
+		}
+	}
+}

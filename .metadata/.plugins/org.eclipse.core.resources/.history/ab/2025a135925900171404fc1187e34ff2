@@ -1,0 +1,17 @@
+package a_Zadania.a_Dzien_1.c_Metody;
+
+public class Car {
+
+	private String brand;
+	private String model;
+	private int price; 
+	
+	public void setter(String brand, String model, int price) {
+		this.brand = brand;
+		this.model = model;
+		this.price = price;
+	}
+	public String getter() {
+		return this.brand + " " + this.model + " " + this.price;
+	}
+}

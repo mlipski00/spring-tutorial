@@ -1,0 +1,19 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+
+public class Main4 {
+
+    public static void main(String[] args) {
+        
+    	System.out.print(createName());
+    }
+    
+    static String createName()
+    {
+    	String name = "Imię";
+    	String surname = "Nazwisko";
+    	String nickname = "Pseudonim";
+    	
+    	return name + surname + nickname;
+    }
+}

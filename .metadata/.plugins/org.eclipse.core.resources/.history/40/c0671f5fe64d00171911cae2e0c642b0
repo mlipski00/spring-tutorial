@@ -1,0 +1,13 @@
+package bank;
+
+import java.util.List;
+
+public class Bank {
+
+	List <Account> accouts;
+	
+	public Bank() {
+		accounts = new ArrayList<Accounts>();
+	}
+	
+}

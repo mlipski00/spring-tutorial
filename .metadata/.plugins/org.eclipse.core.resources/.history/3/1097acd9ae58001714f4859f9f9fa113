@@ -1,0 +1,22 @@
+package exam;
+
+public class Main1 {
+
+	public static void main(String[] args){
+	System.out.println(rectangle(2, 4));
+	System.out.println(rectangle(2, 0));
+	System.out.println(rectangle('ba', 4));
+	}
+
+
+
+	static int rectangle(int a, int b) {
+	try {
+		return a*b;
+		}	
+		catch (NumberFormatException ex) {
+			System.out.println("NumberFormatException");
+		}
+	return -1;
+	}
+}

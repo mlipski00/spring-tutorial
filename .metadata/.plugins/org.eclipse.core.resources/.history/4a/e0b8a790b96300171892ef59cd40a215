@@ -1,0 +1,68 @@
+package a_Zadania.a_Dzien_1.d_Konstruktor;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Calculator {
+ 
+	//List<String> list = new ArrayList<String>(); // opcja na arrayliste zamiast tablicy
+	private String[] history;
+	
+	public Calculator() {
+		//Array[] arr = new Array[0];
+	}
+	
+	public int add(int num1, int num2) {
+		int result = num1 + num2;
+		//list.add("added " + num1 + " to " + num2 + " got " + result + "\n");
+		//addOperation("added "+num1+" to "+num2+" got: "+result);
+		return result;
+	}
+	
+	
+	public int multiply(int num1, int num2) {
+		int result = num1 * num2;
+		//list.add("multiply " + num1 + " * " + num2 + " got " + result + "\n");
+		return result;
+	}
+
+	public int divide(int num1, int num2) {
+		int result = num1 / num2;
+		//list.add("divide " + num1 + " / " + num2 + " got " + result + "\n");
+		addOperation("divided "+num1+" by "+num2+" got: "+result);
+		return result;
+	}
+
+	
+	public int substrack(int num1, int num2) {
+		int result = num1 - num2;
+		//list.add("substrack " + num1 + " - " + num2 + " got " + result + "\n");
+		return result;
+	}
+//	public void printOperations() {
+//		System.out.println(Arrays.toString(list.toArray()));
+//	}
+//	public void clearOperations() {
+//		list.clear();
+//		System.out.println("lista wyczyszczona");
+//		
+//	}
+	private void addOperation(String str){
+		String[] temp = new String[this.history.length+1];
+		for(int i=0;i<this.history.length;i++){
+			temp[i] = this.history[i];
+		}
+		temp[temp.length-1] = str;
+		this.history = temp;
+}
+	public void printOperations(){
+		System.out.println(Arrays.toString(this.history));
+	}
+	
+	public void clearOperations(){
+		this.history = new String[0];
+}
+	
+}

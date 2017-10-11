@@ -1,0 +1,11 @@
+package a_Zadania.d_Dzien_4.b_Pliki;
+
+import java.io.File;
+
+public class Main1 {
+
+    public static void main(String[] args) {
+
+    	File file = new File("Main1.txt");
+    }
+}

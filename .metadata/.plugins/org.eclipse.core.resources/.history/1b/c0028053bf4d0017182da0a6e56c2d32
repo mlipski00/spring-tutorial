@@ -1,0 +1,17 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main1 {
+
+    public static void main(String[] args) {
+    	String a = "1";
+    	String b = "0";
+   
+    	static void average(String a, String b);
+    	int intA = Integer.parseInt(a);
+    	int intB = Integer.parseInt(b);
+    	try {
+    	a/b;
+    	}
+    }
+}

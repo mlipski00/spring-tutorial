@@ -1,0 +1,60 @@
+package a_Zadania.a_Dzien_1.a_Tworzenie_baz_i_tabel;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Main4 {
+static //Zapisz w poniższej zmiennej kod zapytania SQL tworzącego pierwszą tabelę
+	String queryCreateTable1 = "DROP TABLE cinemas" +
+							"(" +
+							"id INT(11) AUTO_INCREMENT," +
+							"name VARCHAR(255) NULL," +
+							"adress VARCHAR(255) NULL," +
+							"PRIMARY KEY(id)" +
+							");";
+
+//Zapisz w poniższej zmiennej kod zapytania SQL tworzącego drugą tabelę
+	static String queryCreateTable2 = "CREATE TABLE Movies" +
+							"(" +
+							"id INT(11) AUTO_INCREMENT," +
+							"name VARCHAR(255) NULL," +
+							"description VARCHAR(255) NULL," +
+							"rating DECIMAL(10,2) NULL," +
+							"PRIMARY KEY(id)" +
+							");";
+
+//Zapisz w poniższej zmiennej kod zapytania SQL tworzącego trzecią tabelę
+	static String queryCreateTable3 = "CREATE TABLE Tickets" +
+							"(" +
+							"id INT(11) AUTO_INCREMENT," +
+							"quantity INT(11) NULL," +
+							"price DECIMAL(10,2) NULL," +
+							"PRIMARY KEY(id)" +
+							");";
+
+//Zapisz w poniższej zmiennej kod zapytania SQL tworzącego czwartą tabelę
+	static String queryCreateTable4 = "CREATE TABLE Payments" +
+							"(" +
+							"id INT(11) AUTO_INCREMENT," +
+							"date DATE NULL," +
+							"PRIMARY KEY(id)" +
+							");";
+	
+	public static void main(String[] args) {
+		Connection conn;
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/cinemas_ex?useSSL=false","root","coderslab");
+			Statement stat = conn.createStatement();
+			stat.executeUpdate(queryCreateTable1);
+			//stat.executeUpdate(queryCreateTable2);
+			//stat.executeUpdate(queryCreateTable3);
+			//stat.executeUpdate(queryCreateTable4);
+			conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

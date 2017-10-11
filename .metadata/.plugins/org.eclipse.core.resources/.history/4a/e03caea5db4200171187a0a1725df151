@@ -1,0 +1,16 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+
+public class Main3 {
+
+    public static void main(String[] args) {
+        float x = 3;
+    	System.out.print(convertToUsd(x));
+    }
+    
+    static float convertToUsd(float zlotys)
+    {
+    	float wynik = zlotys * 4,88;
+    	return wynik;
+    }
+}

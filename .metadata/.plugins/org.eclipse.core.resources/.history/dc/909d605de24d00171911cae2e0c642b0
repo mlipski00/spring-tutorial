@@ -1,0 +1,28 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main5 {
+
+    public static void main(String[] args) {
+
+    	int[] arr = {1, 2, 3, 4};
+    	try {
+    	System.out.println(elementExist(arr, 4));
+    	System.out.println(elementExist(arr, 1));
+    	System.out.println(elementExist(null, 5));
+    	System.out.println(elementExist(arr, 11));
+    	}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+    }
+
+    static int elementExist(int[] elements, int value) throws Exception
+    {
+
+    	for (int j = 0; j<elements.length; j++) {
+    		if (elements[j] == value) return j;
+    	}
+    		throw new Exception("brak liczby");
+    }
+}

@@ -1,0 +1,18 @@
+package springtutorial;
+
+import springtutorial.api.Logger;
+import springtutorial.api.UsersRepository;
+import springtutorial.implementations.LoggerImpl;
+import springtutorial.implementations.UserRepositoryImpl;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Logger logger = new LoggerImpl();
+		UsersRepository userRepository = new UserRepositoryImpl();
+		userRepository.setLogger(logger);
+		
+		usersRepository.createUser("janek");
+	}
+
+}

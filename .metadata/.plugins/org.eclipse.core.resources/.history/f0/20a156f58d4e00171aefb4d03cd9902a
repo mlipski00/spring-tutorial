@@ -1,0 +1,30 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main5 {
+
+    public static void main(String[] args) {
+
+    	textLines();
+    }
+    static void textLines()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	
+    	ArrayList<String> arr = new ArrayList<>();
+		String word = null;
+    	while (word != "quit") {
+    		System.out.println("wprowadź słowo ('quit' kończy program)");
+    		word = scan.nextLine();
+    		System.out.println("wprowadzone słowo: " + word);
+    		System.out.println("podaj następne słowo");
+    		arr.add(word);
+    	}
+    	scan.close();
+    	for (String s : arr) {
+    		System.out.println(s);
+    	}
+    }
+}

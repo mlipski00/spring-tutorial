@@ -1,0 +1,23 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+
+public class Main8 {
+
+	static double max;
+    public static void main(String[] args) {
+        
+    	System.out.print(maxOfThree(11, 2, 5));
+    }
+    
+    static double maxOfThree(double a, double b, double c)
+    {
+    	//return Math.max(Math.max(a, b), c); - to działa...
+    if (a>=b && a>=c)
+    	a = max;
+    else if (b>=a && b>=c)
+    	b = max;
+    else
+    	c = max;
+    return max;
+    }
+}

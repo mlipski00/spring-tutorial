@@ -1,0 +1,12 @@
+package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
+
+public class Main2 {
+	
+	public static void main (String[] args) {
+		
+		Shape shape1 = new Shape(1, 2, "czerwony");
+		
+		System.out.println(shape1.getDescription());
+	}
+
+}

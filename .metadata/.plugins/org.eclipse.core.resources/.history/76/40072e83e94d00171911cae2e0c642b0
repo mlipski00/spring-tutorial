@@ -1,0 +1,32 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main5 {
+
+    public static void main(String[] args) throws Exception {
+
+    	int[] arr = {1, 2, 3, 4};
+    	
+    	System.out.println(elementExist(arr, null));
+    	System.out.println(elementExist(arr, 1));
+    	System.out.println(elementExist(null, 5));
+    	System.out.println(elementExist(arr, 11));
+    }
+
+    static int elementExist(int[] elements, int value) throws Exception
+    {
+    	try {
+    	for (int j = 0; j<elements.length; j++) {
+    		if (elements[j] == value) return j;
+    	}
+    	throw new Exception("brak liczby");
+    	}
+        catch (NullPointerException ex) {
+        System.out.println("null pointer");
+        }
+    	catch (Exception e) {
+    	System.out.println(e.getMessage());
+    	}
+    	return 1;
+    }
+}

@@ -1,0 +1,10 @@
+package a_Zadania.a_Dzien_1.b_Atrybuty;
+
+public class Person {
+
+public String name = "imie";
+public String surname ="nazwisko";
+public int age;
+public String gender;
+
+}

@@ -1,0 +1,32 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main3 {
+
+    public static void main(String[] args) {
+    	try {
+    	getData();
+    	}
+    	catch (InputMismatchException e) {
+    	System.out.println("to nie liczba");
+    	}
+    }
+    static void getData()
+    {
+    	int sum = 0;
+    	int number = 1;
+    	Scanner scan = new Scanner(System.in);
+    	while (number !=0) {
+    		while (!scan.has.NextInt()) {
+    			scan.next();
+    		}
+    		System.out.println("wprowadź liczbę: ");
+    		number = scan.nextInt();
+    		sum += number;
+    	}
+    	System.out.println("suma liczb: " + sum);
+    	scan.close();
+    }
+}

@@ -1,0 +1,26 @@
+package exam;
+
+public class Main2 {
+	
+	public static void main(String[] args){
+		
+		System.out.println(shorten("Długi napis", 2));
+		System.out.println(shorten(123, 2));
+		
+	}
+	
+static String shorten(String str, int length) {
+	
+	try {
+	String newStr = str.substring(0, length);
+	return newStr;
+	}
+		catch (NumberFormatException ex) {
+			System.out.println("NumberFormatException");
+		}
+	return "x";
+	}
+}
+
+
+

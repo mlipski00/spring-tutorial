@@ -1,0 +1,23 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+
+public class Main10 {
+
+    public static void main(String[] args) {
+        
+    	System.out.print(footballWin(1, 2, 3, 4));
+    }
+    static String footballWin(int TeamAMatchA, int TeamAMatchB, int TeamBMatchA, int TeamBMatchB)
+    {
+    	double wynikA = 1.1 * TeamAMatchA + TeamAMatchB;
+    	double wynikB = TeamBMatchA + 1.1 * TeamBMatchB;
+    	String wynik;
+    	if (wynikA == wynikB)
+    	wynik = "X";
+    	if (wynikA < wynikB)
+    	wynik = "wygrała drużyna A";
+    	else
+    	wynik = "wygrała drużyna B";
+    	return wynik;
+    }
+}

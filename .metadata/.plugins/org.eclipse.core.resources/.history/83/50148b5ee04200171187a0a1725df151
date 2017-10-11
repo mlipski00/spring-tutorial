@@ -1,0 +1,21 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+
+public class Main7 {
+
+    private static String wynik;
+
+	public static void main(String[] args) {
+        
+		System.out.print(checkEven(12));
+    }
+    
+    static String checkEven(int number)
+    {
+    	if (number%2==0)
+    	wynik = "even";
+    	else
+    	wynik = "odd";
+    return wynik;
+    }
+}

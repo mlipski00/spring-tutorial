@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="name-spaces"/>
+<aop-project name="inner-beans-and-nulls"/>
+<aop-project name="destroy-method"/>
+<aop-project name="trick-n-tips"/>
+<aop-project name="scopes"/>
+<aop-project name="constructor-injection"/>
+<aop-project name="lists-sets-n-arrays-injection"/>
+<aop-project name="init-method"/>
+<aop-project name="static-factory-method"/>
+<aop-project name="czysta-kopia"/>
+<aop-project name="property-placeholder"/>
+<aop-project name="instance-factory-method"/>
+<aop-project name="simple-values-injection"/>
+<aop-project name="autowire-by-type-and-constructor"/>
+<aop-project name="aware interfaces"/>
+<aop-project name="initialization-moment"/>
+<aop-project name="autowire-by-name"/>
+<aop-project name="maps-n-properties-injection"/>
+<aop-project name="basic-dependency-injection"/>
+</aop-reference-model>

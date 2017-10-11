@@ -1,0 +1,37 @@
+package a_Zadania.a_Dzien_1.c_Tablice;
+
+
+public class Main1 {
+
+    public static void main(String[] args) {
+//        int liczba = 1;
+//    	//int[][] tablica = new int[5][10];
+//    	
+//    	for (int i = 0; i<5; i++) {
+//    		for (int j = 0; j<10; j++) {
+//    			if (liczba <= 9) {
+//    			System.out.print(" 0" + liczba+",");
+//    			}
+//    			liczba++;
+//    			if (liczba >= 10) {
+//    			System.out.print(" " + liczba + ",");
+//    			}
+//    		}
+//    		System.out.println("");
+//    	}
+    	
+    	int[] mainTab = generateTab();
+    }
+    
+    
+    public static void drawTable(int[] mainTab) {
+    	for (int i:mainTab) {
+    		if (i%10==0) {
+    			System.out.println(x);;
+    			System.out.print(i+ ",");
+    		} else {
+    			System.out.print(i+",");
+    		}
+    	}
+    }
+}

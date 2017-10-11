@@ -1,0 +1,24 @@
+package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
+
+public class Main1 {
+
+	public static void main (String[] args) {
+		
+		printTriangle(11);
+	}
+
+	 static void printTriangle(int n) {
+		 String x = "";
+		 String y = "*";
+			for (int i = n; i>=1; i--) {
+				for (int j = i; j>=2; j--) {
+					
+					x += " ";
+				}	
+				System.out.println(x+y);
+				x = "";
+				y+="*";
+			}
+	 
+	}
+}

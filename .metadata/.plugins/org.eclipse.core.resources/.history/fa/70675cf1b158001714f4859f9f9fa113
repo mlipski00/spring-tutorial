@@ -1,0 +1,26 @@
+package exam;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class Main3 {
+
+	public static void main(String[] args){
+		
+		div(1, 2);
+	}
+
+	static int[] div(int size, int interval) {
+		
+    	int randNumbers[] = new int[size];
+    	for (int i=0; i<randNumbers.length; i++) {
+    	Random generator = new Random();
+    	int x = generator.nextInt(1 - interval);
+    	randNumbers[i] = x;
+    	}
+    	System.out.println(Arrays.toString(randNumbers));
+    	Arrays.sort(randNumbers);
+    	System.out.println(randNumbers[0]);
+		return -1;
+		}
+	}

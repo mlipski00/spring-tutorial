@@ -1,0 +1,36 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Scanner;
+
+public class Main7 {
+
+    public static void main(String[] args) {
+
+    	nettoBrutto();
+    	
+    }
+    static void nettoBrutto()
+    {
+    	Scanner scan = new Scanner(System.in);
+		boolean finished = false;
+		System.out.println("wpisz liczbe do konwersji: ");
+		double number = scan.nextDouble();
+		System.out.println("Wpisz typ wyliczenia: \n bn - zamiana brutto na netto \n nb - zamiana netto na brutto");
+		String type = scan.nextLine();
+    	while (!finished) {
+    		type = scan.nextLine();
+    		if (type.equals("bn")) {
+    			number = number *0.77;
+    			finished = true;
+    		}
+    		else if (type.equals("nb")) {
+    			number = number / 0.77;
+        		finished = true;
+    		}
+        	else {
+        	System.out.println("wpisz bn albo nb");
+        		}
+    		}
+    		System.out.println("Wynik to: " + number);
+    	}
+    }

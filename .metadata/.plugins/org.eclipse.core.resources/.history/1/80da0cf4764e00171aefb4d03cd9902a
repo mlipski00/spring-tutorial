@@ -1,0 +1,26 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main1 {
+
+    public static void main(String[] args) {
+
+    	getInfo();
+    }
+    static void getInfo()
+    {
+    	try
+    	{
+    		Scanner scanImie = new Scanner(System.in);
+    		System.out.println("podaj imię: ");
+    		Scanner scanWiek = new Scanner(System.in);
+    		System.out.println("podaj wiek: ");
+    		System.out.println(scanImie + " ma " + scanWiek + " lat");
+    	}
+    	catch (InputMismatchException e) {
+    	System.out.println("podane błędne dane");
+    	}
+    }
+}

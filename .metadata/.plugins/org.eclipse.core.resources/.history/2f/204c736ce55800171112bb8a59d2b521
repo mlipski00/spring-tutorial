@@ -1,0 +1,42 @@
+package Zadanie1;
+
+import java.util.Scanner;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("pomyśl liczbę od 0 do 1000");
+		int min = 0;
+		int max = 1000;
+		String odp1 = "za mało";
+		System.out.println("Zgaduję: " + guess(min, max));
+		int licznik = 0;
+		
+		while (licznik<6) {
+		System.out.println("wpisz: \n 1 - jeżeli za mało \n 2 - jeżeli za dużo \n 3 - jeżeli zgadłem");
+		int odp = scan.nextInt();
+			if (odp == 1) {
+				min = guess(min, max);
+				System.out.println("Zgaduję: " + guess(min, max));
+				licznik++;
+			}
+			else if (odp == 2) {
+				max = guess(min, max);
+				System.out.println("Zgaduję: " + guess(min, max));
+				licznik++;
+			}
+			
+			else if (odp == 3) {
+				System.out.println("Wygrałem!");
+				licznik = 100;
+			}
+		}
+
+	}
+	
+	static int guess(int min, int max) {
+		return ((max-min)/2+min);		
+	}
+}

@@ -1,0 +1,12 @@
+package springtutorial.implementations;
+
+import springtutorial.api.Logger;
+
+public class LoggerImpl implements Logger {
+
+	public void log(String message) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

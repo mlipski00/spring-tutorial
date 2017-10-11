@@ -1,0 +1,37 @@
+package bank;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+public class Bank {
+
+	private List <Account> accounts;
+
+	public Bank() {
+		accounts = new ArrayList<Account>();
+	}
+
+	public List<Account> getAccounts() {
+		return accounts;
+	}
+	public void createAccount() {
+		Account account;
+		String _num = UUID.randomUUID().toString();
+		boolean isUnique = true;
+		for (Account ac : accounts) {
+			if (ac.getNumber().equals(_num)) {
+				isUnique = false;
+			}
+		}
+		if (isUnique) {
+			Account account  = new Account(_num);
+			addAccount(account);
+		}
+		
+	}
+	private void addAccount(Account account) {
+		accounts.add(account);
+	}
+	
+}

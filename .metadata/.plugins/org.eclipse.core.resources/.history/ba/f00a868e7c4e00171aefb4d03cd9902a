@@ -1,0 +1,38 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main2 {
+
+    public static void main(String[] args) {
+    	try
+    	{
+    	operations();
+    	}
+    	catch (ArithmeticException e) {
+    		System.out.println("nie dzielimy przez zero");
+    	}
+    	catch (InputMismatchException e) {
+    	System.out.println("podane błędne dane");
+    	}
+    }
+    static void operations()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	System.out.println("podaj pięrwszą liczbę: ");
+    	float number1 = scan.nextFloat();
+    	System.out.println("podaj drugą liczbę: ");
+    	float number2 = scan.nextFloat();
+    	System.out.println(number2);
+    	if (number2 ==  0){
+    		extracted();
+    	}
+    	System.out.println("dodawnaie: " + (number1 + number2) +" odejmowanie: " + 
+    	(number1 - number2) + " mnożenie: " + number1 * number2 + " dzielenie: " + (number1 / number2));
+    	scan.close();
+    }
+	private static void extracted() {
+		throw new NumberFormatException("dzielenie przez zero");
+	}
+}

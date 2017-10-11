@@ -1,0 +1,18 @@
+package Zadanie1;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("pomyśl liczbę od 0 do 1000");
+		int min = 0;
+		int max = 1000;
+		System.out.println("Zgaduję: " + guess(min, max));
+	}
+	
+	static int guess(int min, int max) {
+		return ((max-min)/2+min);
+		
+	}
+	
+}

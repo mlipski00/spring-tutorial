@@ -1,0 +1,28 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main2 {
+
+    public static void main(String[] args) {
+
+    	String[] arr = {"raz", "dwa", "trzy", null};
+    	System.out.println(safeGet(arr, 3));
+    }
+
+    static String safeGet(String[] str, int index) {
+    		String res = null;
+    		try {
+    			res = str[index];
+    		} 
+    		catch (NullPointerException e) 
+    		{
+    			System.out.println("null pointer");
+    		} 
+    		catch (ArrayIndexOutOfBoundsException e) 
+    		{
+    			System.out.println("poza tablicą");
+    		}
+    
+    	return res;
+}
+}

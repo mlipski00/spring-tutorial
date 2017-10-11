@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;beansOfType&apos; from expression &apos;SomeBean.class&apos;&#x0A;- Original project: &apos;aware interfaces&apos;&#x0A;- Variable name: &apos;beansOfType&apos;&#x0A;- Destination method: &apos;springtutorial.SomeBean.init()&apos;&#x0A;- Variable expression: &apos;SomeBean.class&apos;" description="Extract local variable &apos;beansOfType&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;springtutorial{SomeBean.java" name="beansOfType" replace="false" selection="532 0" stamp="1507310693618" version="1.0"/>
+</session>

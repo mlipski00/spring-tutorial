@@ -1,0 +1,39 @@
+package a_Zadania.a_Dzien_1.b_Atrybuty;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main1 {
+
+
+
+	public static void main(String[] args) {
+
+		int a = 100;
+		System.out.println(a);
+		char b = (char) a;
+		System.out.println(b);
+		String c = new String();
+		c = "napis";
+		
+		Object object = new Object();
+		System.out.println(object);
+		System.out.println(c.getClass());
+		//String d = (String) object;
+		//System.out.println(d);
+		object = (Object) c;
+		System.out.println(object);	
+		int i = 0;
+		Scanner scan = new Scanner(System.in);
+		while (!scan.hasNextInt()) {
+			scan.next();
+			System.out.println("podaj inta");
+		}
+		i = scan.nextInt();
+		double j =  i*Math.PI;
+		i = (int) (i*Math.PI);
+		System.out.println(i + j);
+		scan.close();
+		
+	}
+}

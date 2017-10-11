@@ -1,0 +1,35 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main1 {
+
+    public static void main(String[] args) {
+    	
+    	average("4", "2");
+    	average("4", null);
+    	average("4", "b");
+    	average("4", "0");
+    }
+    	
+    	static void average(String a, String b)
+    	{
+    		try 
+    		{
+    	int intA = Integer.parseInt(a);
+    	int intB = Integer.parseInt(b);
+    	
+    	System.out.println(intA/intB);
+    	}
+    	catch (NullPointerException ex) {
+    		System.out.println("Exception");
+    	}
+    	catch (ArithmeticException ex) {
+    		System.out.println("dzieleni przez zero");
+    	}
+    	catch (NumberFormatException ex) {
+    		System.out.println("zły format");
+    	}
+    	}
+    }
+  
+

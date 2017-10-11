@@ -1,0 +1,18 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main5 {
+
+    public static void main(String[] args) {
+
+    	int[] arr = {1, 2, 3, 4};
+    	elementExist(arr, 2);
+    }
+
+    static int elementExist(int[] elements, int value)
+    {
+    	for (int j = 0; j<elements.length; j++)
+    		if (elements[j] == value)
+    	return 0;
+    }
+}

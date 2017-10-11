@@ -1,0 +1,16 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+
+public class Main10 {
+
+    public static void main(String[] args) {
+        
+    	
+    }
+    static String footballWin(int TeamAMatchA, int TeamAMatchB, int TeamBMatchA, int TeamBMatchB)
+    {
+    	
+    	
+    	
+    }
+}

@@ -1,0 +1,21 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Scanner;
+
+public class Main2 {
+
+    public static void main(String[] args) {
+
+    	operations();
+    }
+    static void operations()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	System.out.println("podaj pięrwszą liczbę: ");
+    	float number1 = scan.nextFloat();
+    	System.out.println("podaj drugą liczbę: ");
+    	float number2 = scan.nextFloat();
+    	System.out.println("dodawnaie: " + (number1 + number2) +" odejmowanie: " + 
+    	(number1 - number2) + " mnożenie: " + number1 * number2 + " dzielenie: " + number1 / number2);
+    }
+}

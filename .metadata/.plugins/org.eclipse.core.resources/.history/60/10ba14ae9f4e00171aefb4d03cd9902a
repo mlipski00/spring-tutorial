@@ -1,0 +1,19 @@
+package a_Zadania.d_Dzien_4.a_Wprowadzanie_danych;
+
+import java.util.Scanner;
+
+public class Main7 {
+
+    public static void main(String[] args) {
+
+    	nettoBrutto();
+    	
+    }
+    static void nettoBrutto()
+    {
+    	Scanner scan = new Scanner(System.in);
+    	System.out.println("Wpisz typ wyliczenia: \n bn - zamiana brutto na netto \n nb - zamiana netto na brutto");
+    	
+    
+    }
+}

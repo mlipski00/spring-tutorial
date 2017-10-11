@@ -1,0 +1,5 @@
+package springtutorial.domain;
+
+public class User {
+
+}

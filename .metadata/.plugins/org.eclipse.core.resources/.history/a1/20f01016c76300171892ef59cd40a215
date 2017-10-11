@@ -1,0 +1,19 @@
+package a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc;
+
+import a_Zadania.a_Dzien_2.b_Zaawansowana_obiektowosc.AdvancedCalculator;
+
+public class Main1 {
+
+public static void main (String[] args) {
+	
+	AdvancedCalculator aCalc = new AdvancedCalculator();
+	aCalc.add(2, 5);
+	aCalc.printOperations();
+	aCalc.divide(23, 23);
+	aCalc.printOperations();
+	aCalc.pow(2, 5);
+	aCalc.root(4,5);
+	aCalc.printOperations();
+}
+
+}

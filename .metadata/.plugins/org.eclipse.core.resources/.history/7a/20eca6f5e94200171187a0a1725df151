@@ -1,0 +1,15 @@
+package a_Zadania.a_Dzien_1.b_Metody;
+
+public class Main3 {
+
+    public static void main(String[] args) {
+        float x = 3.12;
+    	System.out.println(convertToUsd(x));
+    	System.out.println(convertToUsd(404));
+    }
+    
+    static float convertToUsd(float zlotys)
+    {
+    	return zlotys / 4.04;
+    }
+}

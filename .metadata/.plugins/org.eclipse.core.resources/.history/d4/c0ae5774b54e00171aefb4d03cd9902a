@@ -1,0 +1,31 @@
+package a_Zadania.d_Dzien_4.c_Pliki_nio;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class Main3 {
+
+    public static void main(String[] args) {
+
+    	copyFile("text2.txt", "plik2.txt");
+    	
+    }
+    static void copyFile(String fileName, String secondFileName)
+    {
+    	Path file1 = Paths.get(fileName);
+    	Path file2 = Paths.get(secondFileName);
+    	if (!Files.exists(file2)) {
+    		try {
+    			Files.copy(file1,  file2);
+    			System.out.println("Skopiowane");
+    		} catch (IOException e) {
+    			System.out.println("Plik: " + fileName + " nie istnieje.");
+    		}
+    	} else {
+    		System.out.println("sdfsdf");
+    	}
+    }
+
+}

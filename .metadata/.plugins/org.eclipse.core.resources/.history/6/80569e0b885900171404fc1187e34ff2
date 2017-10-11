@@ -1,0 +1,17 @@
+package a_Zadania.a_Dzien_1.b_Atrybuty;
+
+
+public class Main2 {
+	
+	public static void main(String[] args) {
+		
+		
+		Attribute attr = new Attribute();
+		
+		//public void testinfo() {
+		System.out.println(attr.publicAttribute = "jeden");
+		System.out.println(attr.protectedAttribute = 23);
+		setPrivateAttr("prywatny");
+		getPrivateAttr();
+	}
+}

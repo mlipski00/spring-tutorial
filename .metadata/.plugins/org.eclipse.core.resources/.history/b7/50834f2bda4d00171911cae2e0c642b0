@@ -1,0 +1,22 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+
+public class Main4 {
+
+    public static void main(String[] args) {
+
+    	System.out.println(toInt("123"));
+    }
+    static int toInt(String str)
+    {
+    	int i = 0;
+    	try {
+    	i = Integer.parseInt(str);
+    	}
+        catch (NullPointerException ex) {
+        System.out.println("null pointer");
+        }
+    	return i;
+    }
+
+}
