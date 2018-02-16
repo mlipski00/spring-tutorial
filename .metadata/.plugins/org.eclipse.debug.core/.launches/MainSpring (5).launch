@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/lists-sets-n-arrays-injection/src/main/java/springtutorial/MainSpring.java"/>
+<listEntry value="/initialization-moment/src/main/java/springtutorial/mainSpring.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="springtutorial.MainSpring"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="lists-sets-n-arrays-injection"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="springtutorial.mainSpring"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="initialization-moment"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DsomeProperty=&quot;Jakaś wartość&quot;"/>
 </launchConfiguration>

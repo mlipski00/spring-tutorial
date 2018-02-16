@@ -9,7 +9,7 @@ public class mainSpring {
 	
 		ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-
+test___________
 	}
 
 }
